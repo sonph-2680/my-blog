@@ -1,9 +1,3 @@
-<div class="d-flex justify-content-between">
-    <h4 class="d-flex align-items-center font-weight-bold">My Posts</h4>
-    <a href="{{route('posts.create')}}" class="btn btn-primary mb-3">
-        <i class="fa fa-plus" aria-hidden="true"></i>
-    </a>
-</div>
 <ul class="m-0 p-0">
     @foreach ($posts as $post)
     <li class="card col-md-12 p-3 mb-3">

@@ -23,7 +23,7 @@ class UserPostList extends Controller
             return redirect()->route('posts.index');
         } else {
             $posts = $user->posts()->whereStatus(Status::PUBLIC)->paginate(5);
-            return view('posts.posts', ['posts' => $posts]);
+            return view('posts.posts', ['posts' => $posts, 'user' => $user]);
         }
     }
 }
