@@ -59,7 +59,11 @@
 <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.js"></script>
 <script>
     ClassicEditor
-            .create( document.querySelector( '#editor' ) )
+            .create( document.querySelector( '#editor' ), {
+                toolbar: {
+                    removeItems: ['uploadImage']
+                }
+            } )
             .then( editor => {
                     console.log( editor );
             } )
