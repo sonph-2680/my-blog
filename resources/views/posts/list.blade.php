@@ -8,7 +8,7 @@
                 </div>
                 <p class="text-secondary m-0"><small>{{$post->created_at->diffForHumans()}}</small></p>
             </div>
-            <a href="{{route('posts.show', $post->id)}}" class="font-weight-bold text-dark h5">
+            <a href="{{route('posts.show', $post->id)}}" class="font-weight-bold text-dark h5 mt-2">
                 {{$post->title}}
             </a>
         </li>
