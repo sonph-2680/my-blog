@@ -26,7 +26,7 @@
             <div id="main-container">
                 @include('layout.header')
 
-                <div id="page-content" class="container py-5">
+                <div id="page-content" class="container py-3 py-sm-4">
                     @yield('content')
                 </div>
 
