@@ -6,18 +6,6 @@
     $ composer install
     ```
 
--   Cài đặt các package node
-
-    ```console
-    $ npm install
-    ```
-
--   Compile `app.scss`
-
-    ```console
-    $ npm run dev
-    ```
-
 -   Copy file `.env` và chỉnh sửa các biến môi trường
 
     ```console
@@ -61,12 +49,8 @@
 -   Để xem thông tin database vừa tạo, chọn database và truy cập **Settings** > **View Credentials**
     ![2021-10-05_09-16](https://user-images.githubusercontent.com/82442432/135949752-1ba9971e-30ea-4ea6-894c-781b89efd2d7.png)
 
--   Thêm buildpack `nodejs` và `php` trong section **Buildpacks** tại tab **Settings**. Chú ý cần thêm đúng thứ tự.
-    ![Peek 2021-10-05 09-06](https://user-images.githubusercontent.com/82442432/135949252-6eae81d9-3222-4ea0-b857-ee878c6e242d.gif)
-
 -   Cũng tại tab **Settings**, chọn **Reveal Config Vars** để thêm các biến môi trường tương tự file `.env` của project
     ![2021-10-05_10-09](https://user-images.githubusercontent.com/82442432/135953951-6a39b02e-c10c-4fe4-974a-b9f28b37ccc5.png)
-    > Chú ý thêm biến `USE_NPM_INSTALL = true` để Heroku càu đặt các package nodejs cần thiết khi deploy
     
 -   Tạo `Procfile` có nội dung như sau tại thư mục gốc của project
     ```console
